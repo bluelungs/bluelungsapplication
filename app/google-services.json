@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "911003393886",
+    "project_id": "blue-lungs-70453",
+    "storage_bucket": "blue-lungs-70453.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:911003393886:android:13d8737d962720454a79cf",
+        "android_client_info": {
+          "package_name": "com.example.bluelungs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDSA6nCCKMiSJi0B7AUgBGLhOlRCitUxiw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
