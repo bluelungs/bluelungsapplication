@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/screen"
+    android:background="@drawable/login_bg"
     android:padding="40dp"
     tools:context=".MainActivity"
     android:orientation="vertical">
@@ -25,42 +25,57 @@
         android:textSize="50dp"
         android:textStyle="bold"/>
 
-    <com.google.android.material.textfield.TextInputLayout
+    <androidx.cardview.widget.CardView
+        app:cardBackgroundColor="@color/white"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="150dp"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
+        app:cardCornerRadius="30dp"
+        app:cardElevation="10dp">
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email"
-            android:inputType="textEmailAddress"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
-
-    <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        app:passwordToggleEnabled="true"
-        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
-
-        <com.google.android.material.textfield.TextInputEditText
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:hint="Password"
-            android:inputType="textPassword"/>
-
-    </com.google.android.material.textfield.TextInputLayout>
+            android:orientation="vertical"
+            android:layout_gravity="center_horizontal"
+            android:padding="24dp"
+            android:background="@drawable/custom_edittext">
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/email"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="10dp"
+                android:padding="8dp"
+                android:hint="Email"
+                android:drawableLeft="@drawable/email"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:inputType="textEmailAddress"
+                android:drawablePadding="8dp"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:id="@+id/password"
+                android:background="@drawable/custom_edittext"
+                android:layout_marginTop="20dp"
+                android:inputType="textPassword"
+                android:padding="8dp"
+                android:hint="Password"
+                android:drawableLeft="@drawable/pwd"
+                android:textColorHint="@color/grey"
+                android:textColor="@color/black"
+                android:drawablePadding="8dp"/>
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
 
     <Button
+        android:id="@+id/sign_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20dp"
         android:text="SIGN IN"
-        android:background="@drawable/round_btn"
+        android:background="@drawable/custom_edittext"
         android:layout_marginTop="100dp"/>
 
     <LinearLayout
@@ -74,10 +89,12 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Don't have an account?"
+            android:textColor="@color/grey"
             android:textSize="15dp"
             android:textStyle="bold"/>
 
         <TextView
+            android:id="@+id/sign_up"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Sign Up"
