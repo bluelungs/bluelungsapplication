@@ -65,6 +65,14 @@
                 android:textColorHint="@color/grey"
                 android:textColor="@color/black"
                 android:drawablePadding="8dp"/>
+
+            <CheckBox
+                android:id="@+id/checkbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Show Password"
+                android:textColor="@color/grey"/>
+
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
