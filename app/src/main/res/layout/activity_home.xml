@@ -22,15 +22,7 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp">
 
-                <com.google.android.material.bottomnavigation.BottomNavigationView
-                    android:id="@+id/bottomNavigationView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:background="#ffffff"
-                    app:menu="@menu/bottom_menu"
-                    tools:ignore="MissingConstraints"
-                    tools:layout_editor_absoluteX="3dp"
-                    tools:layout_editor_absoluteY="616dp" />
+
 
                 <ImageView
                     android:id="@+id/imageView2"
@@ -221,13 +213,12 @@
                     tools:layout_editor_absoluteX="34dp" />
 
                 <androidx.constraintlayout.widget.ConstraintLayout
+                    android:id="@+id/constraintLayout2"
                     android:layout_width="match_parent"
                     android:layout_height="130dp"
-                    android:background="@drawable/banner_background"
-                    android:layout_marginStart="40dp"
-                    android:layout_marginEnd="40dp"
                     android:layout_marginTop="10dp"
 
+                    android:background="@drawable/banner_background"
                     app:layout_constraintTop_toBottomOf="@+id/editTextText2"
                     tools:layout_editor_absoluteX="0dp">
 
@@ -265,8 +256,8 @@
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_editor_absoluteX="0dp"
-                        tools:ignore="MissingConstraints" />
+                        tools:ignore="MissingConstraints"
+                        tools:layout_editor_absoluteX="0dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -274,6 +265,16 @@
             </androidx.constraintlayout.widget.ConstraintLayout>
 
         </LinearLayout>
+
     </ScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomNavigationView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        app:menu="@menu/bottom_menu"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="3dp"
+        tools:layout_editor_absoluteY="616dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
