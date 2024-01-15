@@ -22,6 +22,16 @@
                 android:layout_height="wrap_content"
                 android:paddingBottom="10dp">
 
+                <com.google.android.material.bottomnavigation.BottomNavigationView
+                    android:id="@+id/bottomNavigationView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="#ffffff"
+                    app:menu="@menu/bottom_menu"
+                    tools:ignore="MissingConstraints"
+                    tools:layout_editor_absoluteX="3dp"
+                    tools:layout_editor_absoluteY="616dp" />
+
                 <ImageView
                     android:id="@+id/imageView2"
                     android:layout_width="0dp"
@@ -249,14 +259,14 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:paddingLeft="20dp"
-
                         android:text="Dissolved Oxygen Level"
                         android:textColor="#ffffff"
                         android:textSize="19sp"
                         android:textStyle="bold"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintTop_toTopOf="parent"
-                        tools:layout_editor_absoluteX="0dp" />
+                        tools:layout_editor_absoluteX="0dp"
+                        tools:ignore="MissingConstraints" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
