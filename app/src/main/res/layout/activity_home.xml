@@ -193,13 +193,14 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:background="@drawable/background_location"
-                    android:drawableEnd="@drawable/locationicon"
+                    android:drawableEnd="@drawable/loicon"
                     android:ems="10"
                     android:hint="Location"
                     android:inputType="text"
                     android:paddingStart="20dp"
                     android:paddingEnd="10dp"
                     android:paddingTop="3dp"
+                    android:paddingBottom="3dp"
                     android:layout_marginStart="40dp"
                     android:layout_marginEnd="40dp"
                     android:layout_marginTop="10dp"
@@ -219,6 +220,43 @@
 
                     app:layout_constraintTop_toBottomOf="@+id/editTextText2"
                     tools:layout_editor_absoluteX="0dp">
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="80%"
+                        android:textColor="#ffffff"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView7"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+                    <ImageView
+                        android:id="@+id/imageView7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:paddingRight="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/fishicon" />
+
+                    <TextView
+                        android:id="@+id/textView3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="20dp"
+
+                        android:text="Dissolved Oxygen Level"
+                        android:textColor="#ffffff"
+                        android:textSize="19sp"
+                        android:textStyle="bold"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        tools:layout_editor_absoluteX="0dp" />
 
                 </androidx.constraintlayout.widget.ConstraintLayout>
 
