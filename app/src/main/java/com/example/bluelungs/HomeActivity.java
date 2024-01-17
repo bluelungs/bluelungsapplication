@@ -10,10 +10,11 @@ import android.os.Bundle;
 
 import com.example.bluelungs.databinding.ActivityHomeBinding;
 
+import kotlin.contracts.Returns;
+
 public class HomeActivity extends AppCompatActivity {
     ActivityHomeBinding binding;
 
-    @SuppressLint("NonConstantResourceId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -23,8 +24,21 @@ public class HomeActivity extends AppCompatActivity {
         replaceFragment(new HomeFragment());
         binding.bottomNavigationView.setBackground(null);
 
-        binding.bottomNavigationView.setOnItemReselectedListener(item -> {
+        binding.bottomNavigationView.setOnItemSelectedListener(item -> {
+            int itemId = item.getItemId();
+            if (itemId == R.id.home) {
+                replaceFragment(new HomeFragment());
+            } else if (itemId == R.id.message) {
+                replaceFragment(new MessageFragment());
+            } else if (itemId == R.id.location) {
+                replaceFragment(new LocationFragment());
+            } else if (itemId == R.id.notification) {
+                replaceFragment(new NotificationFragment());
+            } else if (itemId == R.id.settings) {
+                replaceFragment(new SettingsFragment());
+            }
 
+            return true;
         });
 
     }

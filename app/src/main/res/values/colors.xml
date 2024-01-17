@@ -12,4 +12,8 @@
     <color name="transparent">#00000000</color>
 
     <color name="blue">#03A9F4</color>
+    <color name="night_mode">#6124B1</color>
+    <color name="notifications">#13B2C3</color>
+    <color name="private_acc">#E6A326</color>
+    <color name="security">#D95F69</color>
 </resources>
