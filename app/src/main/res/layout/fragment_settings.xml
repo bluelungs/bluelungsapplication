@@ -15,18 +15,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Settings"
             android:layout_centerInParent="true"
-            android:textColor="@color/blue"
-            android:textStyle="bold"
-            android:textSize="18sp"/>
+            android:text="Settings"
+            android:textColor="#093788"
+            android:textSize="20sp"
+            android:textStyle="bold" />
 
     </RelativeLayout>
 
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:scrollbarSize="0dp">
+        android:scrollbarSize="0dp"
+        android:background="@drawable/top_background">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -45,7 +46,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="+91 89845 36791"
-                android:textColor="@color/blue"
+                android:textColor="#1b60c8"
                 android:textSize="12sp"
                 android:layout_gravity="center"/>
             <androidx.appcompat.widget.AppCompatButton
@@ -54,14 +55,14 @@
                 android:layout_marginTop="20dp"
                 android:paddingStart="30dp"
                 android:layout_gravity="center"
-                android:background="@drawable/custom_edittext"
+                android:background="@drawable/edit_profile"
                 android:text="Edit Profile"
                 android:textAllCaps="false"
-                android:textColor="@color/blue"
+                android:textColor="#185195"
                 android:textStyle="bold"
                 android:paddingEnd="30dp"/>
             <LinearLayout
-                android:background="@drawable/round_back_white10_20"
+                android:background="@drawable/banner_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -88,7 +89,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Night Mode"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/nightModeIcon"/>
                     <androidx.appcompat.widget.SwitchCompat
@@ -120,7 +121,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Notifications"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/notificationIcon"/>
                     <androidx.appcompat.widget.SwitchCompat
@@ -152,7 +153,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Private Account"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/privateAccountIcon"/>
                     <androidx.appcompat.widget.SwitchCompat
@@ -168,7 +169,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/round_back_white10_20"
+                android:background="@drawable/banner_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -195,7 +196,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Security &amp; Privacy"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/securityIcon"/>
                     <ImageView
@@ -226,7 +227,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Text Size"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/textSizeIcon"/>
                     <ImageView
@@ -257,7 +258,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Languages"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/languageIcon"/>
                     <ImageView
@@ -272,7 +273,7 @@
             </LinearLayout>
 
             <LinearLayout
-                android:background="@drawable/round_back_white10_20"
+                android:background="@drawable/banner_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -300,7 +301,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Send us a message"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/sendMessageIcon"/>
                     <ImageView
@@ -331,7 +332,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="About Us"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/aboutUsIcon"/>
                     <ImageView
@@ -362,7 +363,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="FAQs"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/faqIcon"/>
                     <ImageView
@@ -377,8 +378,8 @@
             </LinearLayout>
 
             <LinearLayout
-                android:layout_marginBottom="20dp"
-                android:background="@drawable/round_back_white10_20"
+                android:layout_marginBottom="90dp"
+                android:background="@drawable/banner_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="20dp"
@@ -388,7 +389,6 @@
                 android:padding="15dp">
 
                 <RelativeLayout
-                    android:layout_marginBottom="30dp"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content">
 
@@ -406,7 +406,7 @@
                         android:layout_marginStart="20dp"
                         android:layout_centerVertical="true"
                         android:text="Log Out"
-                        android:textColor="@color/blue"
+                        android:textColor="#e1e6f5"
                         android:textStyle="bold"
                         android:layout_toEndOf="@+id/logOutIcon"/>
                     <ImageView

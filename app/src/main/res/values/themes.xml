@@ -18,7 +18,7 @@
 
         <!-- Status bar color. -->
 
-        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+        <item name="android:statusBarColor">?attr/colorPrimary</item>
 
         <!-- Customize your theme here. -->
 
@@ -28,25 +28,25 @@
     
     <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">@color/night_mode</item>
-        <item name="colorSwitchThumbNormal">@color/blue</item>
+        <item name="colorSwitchThumbNormal">#79dbe7</item>
         <item name="android:colorForeground">#99FFFFFF</item>
     </style>
 
     <style name="notificationSwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">@color/notifications</item>
-        <item name="colorSwitchThumbNormal">@color/blue</item>
+        <item name="colorSwitchThumbNormal">#79dbe7</item>
         <item name="android:colorForeground">#99FFFFFF</item>
     </style>
 
     <style name="privateAccountSwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">@color/private_acc</item>
-        <item name="colorSwitchThumbNormal">@color/blue</item>
+        <item name="colorSwitchThumbNormal">#79dbe7</item>
         <item name="android:colorForeground">#99FFFFFF</item>
     </style>
 
     <style name="securitySwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">@color/security</item>
-        <item name="colorSwitchThumbNormal">@color/blue</item>
+        <item name="colorSwitchThumbNormal">#79dbe7</item>
         <item name="android:colorForeground">#99FFFFFF</item>
     </style>
 
