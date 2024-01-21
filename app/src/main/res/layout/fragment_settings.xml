@@ -51,16 +51,16 @@
                     app:strokeColor="@color/white"
                     app:strokeWidth="5dp" />
 
-                <com.google.android.material.floatingactionbutton.FloatingActionButton
-                    android:id="@+id/floatingActionButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center|bottom"
-                    android:layout_marginStart="30dp"
-                    android:clickable="true"
-                    android:contentDescription="TODO"
-                    android:src="@drawable/baseline_photo_camera_24"
-                    app:fabCustomSize="40dp"/>
+<!--                <com.google.android.material.floatingactionbutton.FloatingActionButton-->
+<!--                    android:id="@+id/floatingActionButton"-->
+<!--                    android:layout_width="wrap_content"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center|bottom"-->
+<!--                    android:layout_marginStart="30dp"-->
+<!--                    android:clickable="true"-->
+<!--                    android:contentDescription="TODO"-->
+<!--                    android:src="@drawable/baseline_photo_camera_24"-->
+<!--                    app:fabCustomSize="40dp"/>-->
 
             </FrameLayout>
 
@@ -80,6 +80,7 @@
                 android:layout_gravity="center"
                 android:background="@drawable/edit_profile"
                 android:text="Edit Profile"
+                android:id="@+id/editProfile"
                 android:textAllCaps="false"
                 android:textColor="#185195"
                 android:textStyle="bold"
