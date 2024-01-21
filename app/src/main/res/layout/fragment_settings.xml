@@ -20,7 +20,6 @@
             android:textColor="#093788"
             android:textSize="20sp"
             android:textStyle="bold" />
-
     </RelativeLayout>
 
     <ScrollView
@@ -34,29 +33,37 @@
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <com.google.android.material.imageview.ShapeableImageView
-                android:id="@+id/profileView"
-                android:layout_width="100dp"
-                android:layout_height="100dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="10dp"
-                app:shapeAppearanceOverlay="@style/circular"
-                android:background="@drawable/round_back_white10_20"
-                app:strokeWidth="5dp"
-                app:strokeColor="@color/white"
-                android:padding="5dp"
-                android:src="@drawable/baseline_person_24" />
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
 
 
-            <com.google.android.material.floatingactionbutton.FloatingActionButton
-                android:id="@+id/floatingActionButton"
-                android:layout_width="61dp"
-                android:layout_height="61dp"
-                android:layout_marginEnd="12dp"
-                android:layout_marginBottom="28dp"
-                android:clickable="true"
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:id="@+id/profileView"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/round_back_white10_20"
+                    android:padding="5dp"
+                    android:src="@drawable/baseline_person_24"
+                    app:shapeAppearanceOverlay="@style/circular"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="5dp" />
 
-                android:src="@drawable/baseline_photo_camera_24" />
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/floatingActionButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center|bottom"
+                    android:layout_marginStart="30dp"
+                    android:clickable="true"
+                    android:contentDescription="TODO"
+                    android:src="@drawable/baseline_photo_camera_24"
+                    app:fabCustomSize="40dp"/>
+
+            </FrameLayout>
+
 
             <TextView
                 android:layout_width="wrap_content"
