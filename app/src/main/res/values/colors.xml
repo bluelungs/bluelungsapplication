@@ -10,10 +10,17 @@
     <color name="grey">#808080</color>
     <color name="lavender">#8692f7</color>
     <color name="transparent">#00000000</color>
+    <color name="colorAccent">#FF4081</color>
 
     <color name="blue">#03A9F4</color>
     <color name="night_mode">#6124B1</color>
     <color name="notifications">#13B2C3</color>
     <color name="private_acc">#E6A326</color>
     <color name="security">#D95F69</color>
+    <color name="background_gradient_start">#000000</color>
+    <color name="background_gradient_end">#DDDDDD</color>
+    <color name="fastlane_background">#0096a6</color>
+    <color name="search_opaque">#ffaa3f</color>
+    <color name="selected_background">#ffaa3f</color>
+    <color name="default_background">#3d3d3d</color>
 </resources>

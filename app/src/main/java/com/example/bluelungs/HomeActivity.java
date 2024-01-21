@@ -1,20 +1,24 @@
 package com.example.bluelungs;
 
+import android.content.Intent;
+import android.os.Bundle;
+
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.annotation.SuppressLint;
-import android.content.Intent;
-import android.os.Bundle;
-
 import com.example.bluelungs.databinding.ActivityHomeBinding;
+import com.github.mikephil.charting.charts.LineChart;
 
-import kotlin.contracts.Returns;
+import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
     ActivityHomeBinding binding;
+
+    private LineChart lineChart;
+
+    private List<String> xValues;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,12 +33,8 @@ public class HomeActivity extends AppCompatActivity {
             int itemId = item.getItemId();
             if (itemId == R.id.home) {
                 replaceFragment(new HomeFragment());
-            } else if (itemId == R.id.message) {
-                replaceFragment(new MessageFragment());
             } else if (itemId == R.id.location) {
                 replaceFragment(new LocationFragment());
-            } else if (itemId == R.id.notification) {
-                replaceFragment(new NotificationFragment());
             } else if (itemId == R.id.settings) {
                 replaceFragment(new SettingsFragment());
             }
@@ -43,6 +43,7 @@ public class HomeActivity extends AppCompatActivity {
         });
 
     }
+
     private void replaceFragment (Fragment fragment){
         FragmentManager fragmentManager= getSupportFragmentManager();
         FragmentTransaction fragmentTransaction= fragmentManager.beginTransaction();

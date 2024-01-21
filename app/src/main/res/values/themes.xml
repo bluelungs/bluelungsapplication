@@ -25,7 +25,7 @@
     </style>
 
     <style name="Theme.BlueLungs" parent="Base.Theme.BlueLungs"/>
-    
+
     <style name="nightModeSwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">@color/night_mode</item>
         <item name="colorSwitchThumbNormal">#79dbe7</item>
