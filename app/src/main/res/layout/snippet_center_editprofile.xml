@@ -37,7 +37,7 @@
                     android:layout_gravity="center|bottom"
                     android:layout_marginStart="30dp"
                     android:clickable="true"
-                    android:contentDescription="TODO"
+                    android:contentDescription="@string/todo"
                     android:src="@drawable/baseline_photo_camera_24"
                     app:fabCustomSize="40dp"/>
 
@@ -67,7 +67,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Username"/>
+                    android:hint="@string/username"/>
 
             </RelativeLayout>
 
@@ -95,7 +95,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Gender"/>
+                    android:hint="@string/gender"/>
 
             </RelativeLayout>
 
@@ -123,7 +123,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Designation"/>
+                    android:hint="@string/designation"/>
 
             </RelativeLayout>
 
@@ -192,7 +192,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Email"/>
+                    android:hint="@string/email"/>
 
             </RelativeLayout>
 
@@ -219,7 +219,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Phone Number"/>
+                    android:hint="@string/phone_number"/>
 
             </RelativeLayout>
 
@@ -245,7 +245,7 @@
                     android:layout_marginStart="40dp"
                     android:background="@null"
                     android:inputType="textNoSuggestions"
-                    android:hint="Aadhaar Number"/>
+                    android:hint="@string/aadhaar_number"/>
 
             </RelativeLayout>
 
