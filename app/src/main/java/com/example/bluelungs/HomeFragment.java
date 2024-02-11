@@ -99,7 +99,7 @@ import java.util.List;
                     SensorData sensorData = dataSnapshot.getValue(SensorData.class);
                     if (sensorData != null) {
                         Log.d("FirebaseData", "Temperature: " + sensorData.getTemperature() + ", Turbidity: " + sensorData.getTurbidity());
-                        updateChart(sensorData.getTemperature(), sensorData.getTurbidity());
+                        updateChart((int) sensorData.getTemperature(), (int) sensorData.getTurbidity());
                     }
                 }
 
@@ -116,7 +116,7 @@ import java.util.List;
 //        return inflater.inflate(R.layout.fragment_home, container, false);
     }
 
-    private void updateChart(float temperature, float turbidity) {
+    private void updateChart(int temperature, int turbidity) {
         List<Entry> temperatureEntries= new ArrayList<>();
         List<Entry> turbidityEntries= new ArrayList<>();
 
